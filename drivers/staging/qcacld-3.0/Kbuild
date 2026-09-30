@@ -2608,6 +2608,7 @@ INCS +=		$(COEX_DISPATCHER_INC)
 INCS +=		$(COEX_CORE_INC)
 
 ccflags-y += $(INCS)
+ccflags-y += -Wno-implicit-enum-enum-cast
 
 cppflags-y +=	-DANI_OS_TYPE_ANDROID=6 \
 		-Wall\
